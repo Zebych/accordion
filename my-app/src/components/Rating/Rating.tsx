@@ -4,7 +4,11 @@ export type RatingType = {
     selected: boolean
 }
 
-export function Rating(props: any) {
+type RatingPropsType={
+    value:0|1|2|3|4|5
+}
+
+export function Rating(props: RatingPropsType) {
     if (props.value === 1) {
        return <div>
             <Star selected={true}/>
@@ -59,18 +63,9 @@ export function Rating(props: any) {
             <Star selected={false}/>
         </div>
     }
-    return <div>
-        <Star selected={false}/>
-        <Star selected={false}/>
-        <Star selected={false}/>
-        <Star selected={false}/>
-        <Star selected={false}/>
-
-
-    </div>
 }
 
-function Star(props: any) {
+function Star(props: RatingType) {
     if (props.selected === true) {
         return <span><b>star</b> </span>
     } else {

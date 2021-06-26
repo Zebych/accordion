@@ -8,7 +8,7 @@ function App() {
         <div>
            <AppTitle/>
             <Accordion titleValue={"Menu"} collapsed={true}/>
-            <Rating value={2}/>
+            <Rating value={3}/>
             <Accordion titleValue={"Users"} collapsed={false}/>
             <Rating value={4}/>
 

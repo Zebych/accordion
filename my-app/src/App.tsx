@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import {Button} from "./button/Button";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Rating value={3}/>
             <Accordion titleValue={"Users"} collapsed={false}/>
             <Rating value={4}/>
+            <Button />
 
         </div>
     );

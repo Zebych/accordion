@@ -41,6 +41,7 @@ export const Button = () => {
             <div style={ofStyle} onClick={()=>setButtonState(false)}>off</div>
             <div style={indicatorStyle}></div>
         </div>
+        
     );
 };
 

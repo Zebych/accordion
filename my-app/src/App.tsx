@@ -20,7 +20,7 @@ function App() {
                 setAccordionCollapsed(!accordionCollapsed)
             }}/>
             <UncontrolledOnOff/>
-            <ControlledOnOff onChange={() => setButtonState(buttonState)} buttonState={buttonState}/>
+            <ControlledOnOff onChange={setButtonState} buttonState={buttonState}/>
             {/*  <AppTitle/>
 
 

@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
 
-/*type PropsType = {
-    on: boolean
-}*/
-
-export const Button = () => {
-    const [buttonState, setButtonState] = useState(true)
+export const UncontrolledOnOff = () => {
+    const [buttonState, setButtonState] = useState(false)
 
     const onStyle={
         width: '30px',

@@ -33,3 +33,25 @@ export const SimpleExample = () => {
     </>
 }
 
+export const SetTimeoutExample = () => {
+    const [counter, setCounter] = useState(1)
+
+    console.log('setTimeoutExample')
+
+
+    useEffect(() => {
+        console.log('setTimeout')
+        setInterval(() => {
+            setCounter(state => state + 1)
+        },1000)
+
+    }, [])
+
+
+    return <>
+        Hello,{counter}
+
+    </>
+}
+
+
